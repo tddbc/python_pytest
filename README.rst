@@ -1,12 +1,13 @@
+############################
 TDDBC for Python with Pytest
-============================
+############################
 
 これは、TDDBCのPythonista向け Pytest_ プロジェクトです
 
 .. _Pytest: http://pytest.org/latest-ja/
 
 動作確認環境
-------------
+============
 
 - Python 2.7.6
 - Python 3.3.1
@@ -14,7 +15,7 @@ TDDBC for Python with Pytest
 - PyPy 2.2.0
 
 セットアップ
-------------
+============
 
 .. code-block:: sh
 
@@ -43,6 +44,6 @@ TDDBC for Python with Pytest
 のように正常終了すればOKです
 
 ライセンス
-----------
+==========
 
 MIT ライセンスです (詳しくはプロジェクト直下の LICENSE をご覧ください)
