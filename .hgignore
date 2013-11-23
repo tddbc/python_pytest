@@ -1,0 +1,8 @@
+syntax:glob
+
+*.egg-info
+*.pot
+*.py[co]
+__pycache__
+tests/coverage_html/
+tests/.coverage
