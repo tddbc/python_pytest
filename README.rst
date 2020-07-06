@@ -9,10 +9,10 @@ TDDBC for Python with Pytest
 動作確認環境
 ============
 
-- Python 2.7.6
-- Python 3.3.1
-- PyPy 1.9.0
-- PyPy 2.2.0
+- Python 3.8.0
+- pytest 5.4.3
+
+※Python2は2020年1月にサポート終了(EOL)していますので、Python3をご利用ください。
 
 セットアップ
 ============
