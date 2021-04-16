@@ -1,3 +1,5 @@
 class FizzBuzz:
-    def convert(self, n):
-        return str(n)
+    def convert(self, num):
+        if (num % 3 == 0):
+            return 'Fizz'
+        return str(num)
