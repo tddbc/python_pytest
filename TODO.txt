@@ -11,7 +11,10 @@ TODO
 - [x] 3の倍数のときは数の代わりに｢Fizz｣に変換する
   - [x] 3を渡すと文字列"Fizz"を返す -> 仮実装 -> 本実装
 
-- [ ] 5の倍数のときは数の代わりに｢Buzz｣に変換する
+- [x] 5の倍数のときは数の代わりに｢Buzz｣に変換する
+  - [x] 5を渡すと文字列"Buzz"を返す -> 明白な実装
+
+
 - [ ] 3と5両方の倍数のときは数の代わりに｢FizzBuzz｣に変換する
 
 - [ ] 1からnまでの数
@@ -25,3 +28,32 @@ TODO
 テスト容易性: 低
 
 - [ ] プリントする
+
+
+
+
+
+
+
+============================
+
+from acme.fizzbuzz import FizzBuzz
+import pytest
+
+class TestFizzBuzz:
+
+    @pytest.fixture()
+    def fizzbuzz(self):
+        return FizzBuzz()
+
+    def test_1を渡すと文字列1を返す(self, fizzbuzz):
+        assert fizzbuzz.convert(1) == '1'
+
+    def test_2を渡すと文字列2を返す(self, fizzbuzz):
+        assert fizzbuzz.convert(2) == '2'
+
+    def test_3を渡すと文字列Fizzを返す(self, fizzbuzz):
+        assert fizzbuzz.convert(3) == 'Fizz'
+
+    def test_5を渡すと文字列Buzzを返す(self, fizzbuzz):
+        assert fizzbuzz.convert(5) == 'Buzz'
