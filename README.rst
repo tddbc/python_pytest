@@ -17,15 +17,19 @@ TDDBC for Python with Pytest
 セットアップ
 ============
 
+以下のように実行して、環境を構築してください。
+
 .. code-block:: sh
 
+   $ git clone https://github.com/yattom/python_pytest.git
+   $ cd python_pytest
    $ pip3 install -r requirements.txt
 
-**setup.py** を実行し
+テストを実行するには **pytest** コマンドを使います。
 
 .. code-block:: sh
 
-   $ python3 setup.py test
+   $ pytest
    
    ...
    
@@ -40,7 +44,8 @@ TDDBC for Python with Pytest
    tests/acme/test_snake.py::TestPython::test_be_out_of_question PASSED     [ 33%]
    tests/acme/test_snake.py::TestMontyPython::test_say_name[Monty Python] PASSED [ 66%]
    tests/acme/test_snake.py::TestMontyPython::test_say_name[John Smith] PASSED [100%]
-   ============================== 3 passed in 0.05s ===============================
+   
+   ============================== 3 passed in 0.04s ===============================
 
 のように正常終了すればOKです
 
