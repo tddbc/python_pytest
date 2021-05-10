@@ -10,7 +10,7 @@ TDDBC for Python with Pytest
 ============
 
 - Python 3.8.5
-- pytest 5.4.3
+- pytest 6.2.4
 
 ※Python2は2020年1月にサポート終了(EOL)していますので、Python3をご利用ください。
 
