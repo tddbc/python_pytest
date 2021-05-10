@@ -9,7 +9,7 @@ TDDBC for Python with Pytest
 動作確認環境
 ============
 
-- Python 3.8.0
+- Python 3.8.5
 - pytest 5.4.3
 
 ※Python2は2020年1月にサポート終了(EOL)していますので、Python3をご利用ください。
@@ -19,27 +19,28 @@ TDDBC for Python with Pytest
 
 .. code-block:: sh
 
-   $ pip install -r requirements.txt
+   $ pip3 install -r requirements.txt
 
 **setup.py** を実行し
 
 .. code-block:: sh
 
-   $ python setup.py test
+   $ python3 setup.py test
    
    ...
    
    # Output sample
-   ======================== test session starts =================================
-   platform linux2 -- Python 2.7.3[pypy-2.2.0-final] -- pytest-2.4.2
-   -- ~/.virtualenvs/tddbc_python_pytest_pypy22/bin/python
-   plugins: cov, xdist
+   ============================= test session starts ==============================
+   platform linux -- Python 3.8.5, pytest-6.2.4, py-1.10.0, pluggy-0.13.1 -- /usr/bin/python3
+   cachedir: .pytest_cache
+   rootdir: /root/work/python_pytest, configfile: setup.cfg
+   plugins: forked-1.3.0, cov-2.11.1, xdist-2.2.1
    collected 3 items
    
-   tests/acme/test_acme.py:28: TestPython.test_be_out_of_question PASSED
-   tests/acme/test_acme.py:41: TestMontyPython.test_say_name[Monty Python] PASSED
-   tests/acme/test_acme.py:41: TestMontyPython.test_say_name[John Smith] PASSED
-   ======================== 3 passed in 0.10 seconds ============================
+   tests/acme/test_snake.py::TestPython::test_be_out_of_question PASSED     [ 33%]
+   tests/acme/test_snake.py::TestMontyPython::test_say_name[Monty Python] PASSED [ 66%]
+   tests/acme/test_snake.py::TestMontyPython::test_say_name[John Smith] PASSED [100%]
+   ============================== 3 passed in 0.05s ===============================
 
 のように正常終了すればOKです
 
