@@ -38,7 +38,7 @@ TDDBC for Python with Pytest
    platform linux -- Python 3.8.5, pytest-6.2.4, py-1.10.0, pluggy-0.13.1 -- /usr/bin/python3
    cachedir: .pytest_cache
    rootdir: /root/work/python_pytest, configfile: setup.cfg
-   plugins: forked-1.3.0, cov-2.11.1, xdist-2.2.1
+   plugins: cov-2.11.1
    collected 3 items
    
    tests/acme/test_snake.py::TestPython::test_be_out_of_question PASSED     [ 33%]
