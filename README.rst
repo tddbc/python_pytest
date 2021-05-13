@@ -30,15 +30,31 @@ TDDBC for Python with Pytest
 .. code-block:: sh
 
    $ pytest
-   
    ...
-   
    # Output sample
    ============================= test session starts ==============================
-   platform linux -- Python 3.8.5, pytest-6.2.4, py-1.10.0, pluggy-0.13.1 -- /usr/bin/python3
+   platform linux -- Python 3.8.5, pytest-6.2.4, py-1.10.0, pluggy-0.13.1
+   rootdir: /root/work/python_pytest
+   plugins: cov-2.11.1
+   collected 3 items
+   
+   tests/acme/test_snake.py ...                                             [100%]
+   ============================== 3 passed in 0.03s ===============================
+
+のように正常終了すればOKです
+
+実行したテストを1つずつ表示するには **-v** オプションを使います。
+
+.. code-block:: sh
+
+   $ pytest -v
+   ...
+   # Output sample
+   ============================= test session starts ==============================
+   platform linux -- Python 3.8.5, pytest-6.2.4, py-1.10.0, pluggy-0.13.1 -- /root/work/python_pytest/.venv/bin/python3
    cachedir: .pytest_cache
-   rootdir: /root/work/python_pytest, configfile: setup.cfg
-   plugins: forked-1.3.0, cov-2.11.1, xdist-2.2.1
+   rootdir: /root/work/python_pytest
+   plugins: cov-2.11.1
    collected 3 items
    
    tests/acme/test_snake.py::TestPython::test_be_out_of_question PASSED     [ 33%]
@@ -47,7 +63,6 @@ TDDBC for Python with Pytest
    
    ============================== 3 passed in 0.04s ===============================
 
-のように正常終了すればOKです
 
 ライセンス
 ==========
