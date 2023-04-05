@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "python-pytest"
+version = "0.1.0"
+description = ""
+authors = ["shingotakagij7a <shingo.takagi.j7a@jp.denso.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "app"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+appdirs = "^1.4.4"
+cov-core = "^1.15.0"
+coverage = "^7.2.2"
+distlib = "^0.3.6"
+execnet = "^1.9.0"
+filelock = "^3.10.7"
+iniconfig = "^2.0.0"
+pytest-cov = "^4.0.0"
+pytest-xdist = "^3.2.1"
+pytest = "^7.2.2"
+tox = "^4.4.9"
+virtualenv = "^20.21.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
