@@ -23,6 +23,10 @@ tox = "^4.4.9"
 virtualenv = "^20.21.0"
 
 
+[tool.poetry.group.dev.dependencies]
+pytest-watch = "^4.2.0"
+pytest-testdox = "^3.0.1"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"

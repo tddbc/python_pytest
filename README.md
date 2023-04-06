@@ -42,6 +42,18 @@ tests/acme/test_snake.py::TestMontyPython::test_say_name[John-Hello John] PASSED
 
 のように正常終了すれば OK です。
 
+pytest-watch を使用してファイルの変更を検知して自動で pytest を実行させることもできます。
+
+```:sh
+poetry run ptw
+```
+
+pytest-testdox を使用してテストケースのツリーを出力できます。
+
+```:sh
+PYTEST_ADDOPTS=--testdox poetry run ptw
+```
+
 ## ライセンス
 
 MIT
