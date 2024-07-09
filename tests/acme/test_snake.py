@@ -22,9 +22,10 @@ class TestPython:
 
 class TestMontyPython:
     @pytest.mark.parametrize(
-        'name',
+        'name, expected',
         [
-            'Monty Python', 'John Smith'
+            ('Monty Python', 'Hello Monty Python'),
+            ('John Smith', 'Hello John Smith'),
         ])
-    def test_say_name(self, name):
-        assert MontyPython().say(name) == 'Hello ' + name
+    def test_say_name(self, name, expected):
+        assert MontyPython().say(name) == expected
