@@ -7,7 +7,7 @@ def ultimate_answer():
     return 42
 
 
-class Python(object):
+class Python:
     def say(self, greeting=None):
         return 'Hiss!' * randint(1, 9)
 
