@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from random import randint
-
 
 def ultimate_answer():
     return 42
@@ -9,8 +7,7 @@ def ultimate_answer():
 
 class Python:
     def say(self, greeting=None):
-        return 'Hiss!' * randint(1, 9)
-
+        return 'Hiss!'
 
 
 class MontyPython(Python):

@@ -17,7 +17,7 @@ def test_ultimate_answer():
 
 class TestPython:
     def test_be_out_of_question(self):
-        assert re.match(r'^(Hiss\!)+$', Python().say()), 'シャー'
+        assert Python().say() == 'Hiss!'
 
 
 class TestMontyPython:
