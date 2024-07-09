@@ -7,6 +7,7 @@
 
 import re
 
+from acme.snake import ultimate_answer, Python, MontyPython
 
 def pytest_generate_tests(metafunc):
     """
@@ -25,13 +26,11 @@ def pytest_generate_tests(metafunc):
 
 
 def test_ultimate_answer():
-    from acme.snake import ultimate_answer
     assert ultimate_answer() == 42
 
 
 class TestPython:
     def test_be_out_of_question(self):
-        from acme.snake import Python
         assert re.match(r'^(Hiss\!)+$', Python().say()), 'シャー'
 
 
@@ -44,5 +43,4 @@ class TestMontyPython:
     }
 
     def test_say_name(self, name):
-        from acme.snake import MontyPython
         assert MontyPython().say(name) == 'Hello ' + name
