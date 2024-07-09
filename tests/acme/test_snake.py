@@ -24,6 +24,11 @@ def pytest_generate_tests(metafunc):
     )
 
 
+def test_ultimate_answer():
+    from acme.snake import ultimate_answer
+    assert ultimate_answer() == 42
+
+
 class TestPython:
     def test_be_out_of_question(self):
         from acme.snake import Python

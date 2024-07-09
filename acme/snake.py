@@ -3,9 +3,14 @@
 from random import randint
 
 
+def ultimate_answer():
+    return 42
+
+
 class Python(object):
     def say(self, greeting=None):
         return 'Hiss!' * randint(1, 9)
+
 
 
 class MontyPython(Python):
