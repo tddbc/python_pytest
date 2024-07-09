@@ -5,24 +5,10 @@
 サンプルテスト
 """
 
+import pytest
 import re
 
 from acme.snake import ultimate_answer, Python, MontyPython
-
-def pytest_generate_tests(metafunc):
-    """
-    Parametrizing test methods through per-class configuration
-    http://pytest.org/latest-ja/example/parametrize.html#id5
-    """
-    try:
-        funcarglist = metafunc.cls.params[metafunc.function.__name__]
-    except AttributeError:
-        return
-    argnames = list(funcarglist[0])
-    metafunc.parametrize(
-        argnames,
-        [[funcargs[name] for name in argnames] for funcargs in funcarglist]
-    )
 
 
 def test_ultimate_answer():
@@ -35,12 +21,10 @@ class TestPython:
 
 
 class TestMontyPython:
-    params = {
-        'test_say_name': [
-            dict(name='Monty Python'),
-            dict(name='John Smith'),
-        ],
-    }
-
+    @pytest.mark.parametrize(
+        'name',
+        [
+            'Monty Python', 'John Smith'
+        ])
     def test_say_name(self, name):
         assert MontyPython().say(name) == 'Hello ' + name
