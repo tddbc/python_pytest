@@ -17,7 +17,13 @@ def test_ultimate_answer():
 
 class TestPython:
     def test_say(self):
-        assert Python().say() == 'Hiss!'
+        # Arrange
+        # sut = System Under Test
+        sut = Python()
+        # Act
+        actual = sut.say()
+        # Assert
+        assert actual == 'Hiss!'
 
 
 class TestMontyPython:
@@ -28,5 +34,9 @@ class TestMontyPython:
             ('John Smith', 'Hello John Smith'),
         ])
     def test_say_name(self, name, expected):
+        # Arrange
         sut = MontyPython(name)
-        assert sut.say() == expected
+        # Act
+        actual = sut.say()
+        # Assert
+        assert actual == expected
