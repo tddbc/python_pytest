@@ -6,7 +6,6 @@
 """
 
 import pytest
-import re
 
 from acme.snake import ultimate_answer, Python, MontyPython
 
