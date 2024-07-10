@@ -6,10 +6,13 @@ def ultimate_answer() -> int:
 
 
 class Python:
-    def say(self, greeting: str = '') -> str:
+    def say(self) -> str:
         return 'Hiss!'
 
 
 class MontyPython(Python):
-    def say(self, greeting: str = '') -> str:
-        return f'Hello {greeting}'
+    def __init__(self, greeting: str):
+        self.greeting = greeting
+
+    def say(self) -> str:
+        return f'Hello {self.greeting}'

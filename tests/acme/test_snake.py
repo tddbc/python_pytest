@@ -19,9 +19,6 @@ class TestPython:
     def test_say(self):
         assert Python().say() == 'Hiss!'
 
-    def test_say_greeting_is_ignored(self):
-        assert Python().say('a greeting') == 'Hiss!'
-
 
 class TestMontyPython:
     @pytest.mark.parametrize(
@@ -31,4 +28,5 @@ class TestMontyPython:
             ('John Smith', 'Hello John Smith'),
         ])
     def test_say_name(self, name, expected):
-        assert MontyPython().say(name) == expected
+        sut = MontyPython(name)
+        assert sut.say() == expected
