@@ -11,8 +11,8 @@ class Python:
 
 
 class MontyPython(Python):
-    def __init__(self, greeting: str):
-        self.greeting = greeting
+    def __init__(self, name: str):
+        self.name = name
 
     def say(self) -> str:
-        return f'Hello {self.greeting}'
+        return f'Hello {self.name}'
