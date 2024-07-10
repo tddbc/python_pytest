@@ -4,7 +4,7 @@ TDDBC for Python with Pytest
 
 これは、TDDBCのPythonista向け Pytest_ プロジェクトです
 
-.. _Pytest: http://pytest.org/latest-ja/
+.. _Pytest: https://docs.pytest.org/
 
 動作確認環境
 ============
