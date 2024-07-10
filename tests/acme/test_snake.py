@@ -16,8 +16,11 @@ def test_ultimate_answer():
 
 
 class TestPython:
-    def test_be_out_of_question(self):
+    def test_say(self):
         assert Python().say() == 'Hiss!'
+
+    def test_say_greeting_is_ignored(self):
+        assert Python().say('a greeting') == 'Hiss!'
 
 
 class TestMontyPython:
