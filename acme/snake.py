@@ -12,4 +12,4 @@ class Python:
 
 class MontyPython(Python):
     def say(self, greeting: str = '') -> str:
-        return 'Hello %s' % greeting
+        return f'Hello {greeting}'
