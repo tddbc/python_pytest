@@ -11,4 +11,4 @@ pytest-cov==2.11.1
 pytest-xdist==2.2.1
 pytest==9.0.3
 tox==3.23.1
-virtualenv==20.36.1
+virtualenv==21.14.13
